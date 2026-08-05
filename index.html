@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Materiales del curso Herramientas Estadísticas y Computacionales para el Análisis de Datos en Investigación.">
+  <meta name="theme-color" content="#16324f">
+  <title>Herramientas Estadísticas y Computacionales</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">HEC</span>
+        <span class="brand-name">Capacitación docente</span>
+      </a>
+      <p class="header-meta">Instituto Tecnológico de Tijuana · 2026</p>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="titulo-curso">
+    <div class="hero-inner">
+      <p class="eyebrow">Curso de capacitación docente</p>
+      <h1 id="titulo-curso">Herramientas Estadísticas y Computacionales</h1>
+      <p class="hero-subtitle">para el análisis de datos en investigación</p>
+      <p class="hero-description">
+        Materiales prácticos de Python, manejo de datos experimentales,
+        estadística descriptiva y visualización científica.
+      </p>
+      <div class="course-facts" aria-label="Resumen del contenido disponible">
+        <span><strong>4</strong> materiales</span>
+        <span><strong>2</strong> sesiones</span>
+        <span><strong>HTML</strong> de consulta</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="tabs-shell" aria-label="Secciones del curso">
+    <div class="tabs" role="tablist" aria-label="Contenido por sesión">
+      <button id="tab-inicio" class="tab-button" type="button" role="tab"
+              aria-selected="true" aria-controls="inicio" data-tab="inicio">
+        Inicio
+      </button>
+      <button id="tab-sesion-1" class="tab-button" type="button" role="tab"
+              aria-selected="false" aria-controls="sesion-1" data-tab="sesion-1" tabindex="-1">
+        Sesión 1
+      </button>
+      <button id="tab-sesion-2" class="tab-button" type="button" role="tab"
+              aria-selected="false" aria-controls="sesion-2" data-tab="sesion-2" tabindex="-1">
+        Sesión 2
+      </button>
+    </div>
+  </nav>
+
+  <main id="contenido" class="main-content">
+    <section id="inicio" class="tab-panel" role="tabpanel" aria-labelledby="tab-inicio">
+      <div class="intro-grid">
+        <div>
+          <p class="section-kicker">Bienvenida</p>
+          <h2>Un punto de acceso sencillo para el curso</h2>
+          <p>
+            Este sitio reúne las demostraciones y actividades disponibles hasta
+            el momento. Cada material conserva el código, las explicaciones y
+            las salidas generadas en el notebook original.
+          </p>
+          <p>
+            Selecciona una sesión y abre el recurso en una pestaña nueva. No es
+            necesario instalar Python para consultar estos documentos.
+          </p>
+        </div>
+        <aside class="note-card" aria-labelledby="como-usar">
+          <h3 id="como-usar">Cómo usar el sitio</h3>
+          <ol>
+            <li>Selecciona la sesión.</li>
+            <li>Abre el material que quieras consultar.</li>
+            <li>Regresa a esta pestaña para continuar.</li>
+          </ol>
+        </aside>
+      </div>
+
+      <div class="available-now">
+        <span class="status-dot" aria-hidden="true"></span>
+        <p><strong>Disponible ahora:</strong> cuatro documentos HTML organizados en dos sesiones.</p>
+      </div>
+    </section>
+
+    <section id="sesion-1" class="tab-panel" role="tabpanel"
+             aria-labelledby="tab-sesion-1" hidden>
+      <header class="section-heading">
+        <p class="section-kicker">Sesión 1</p>
+        <h2>Python, Colab y limpieza de datos</h2>
+        <p>
+          Introducción al trabajo reproducible con Python y diagnóstico de
+          problemas de captura en datos experimentales.
+        </p>
+      </header>
+
+      <div class="resource-grid">
+        <article class="resource-card">
+          <div class="card-topline">
+            <span class="resource-number">01</span>
+            <span class="resource-type">Demostración</span>
+          </div>
+          <h3>Python, Colab y datos</h3>
+          <p>Fundamentos de Python y primeros pasos con datos experimentales.</p>
+          <a class="resource-link" href="materiales/01_demostracion_python_colab_datos.html"
+             target="_blank" rel="noopener">
+            Abrir material <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <div class="card-topline">
+            <span class="resource-number">02</span>
+            <span class="resource-type">Actividad</span>
+          </div>
+          <h3>Limpieza de datos</h3>
+          <p>Actividad guiada para identificar, corregir y documentar errores de captura.</p>
+          <a class="resource-link" href="materiales/02_actividad_limpieza_datos.html"
+             target="_blank" rel="noopener">
+            Abrir actividad <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="resource-card solution-card">
+          <div class="card-topline">
+            <span class="resource-number">03</span>
+            <span class="resource-type solution-label">Solución</span>
+          </div>
+          <h3>Solución: limpieza de datos</h3>
+          <p>Desarrollo completo de la actividad, con comprobaciones y resultados.</p>
+          <a class="resource-link" href="materiales/03_actividad_limpieza_datos_solucion.html"
+             target="_blank" rel="noopener">
+            Abrir solución <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="sesion-2" class="tab-panel" role="tabpanel"
+             aria-labelledby="tab-sesion-2" hidden>
+      <header class="section-heading">
+        <p class="section-kicker">Sesión 2</p>
+        <h2>Estadística descriptiva y visualización</h2>
+        <p>
+          Resúmenes numéricos y gráficos para explorar la actividad enzimática
+          y comunicar patrones experimentales.
+        </p>
+      </header>
+
+      <div class="resource-grid resource-grid-single">
+        <article class="resource-card featured-card">
+          <div class="card-topline">
+            <span class="resource-number">04</span>
+            <span class="resource-type">Demostración</span>
+          </div>
+          <h3>Estadística descriptiva y visualización</h3>
+          <p>
+            Cálculo e interpretación de medidas descriptivas, variabilidad y
+            representaciones gráficas de resultados de laboratorio.
+          </p>
+          <a class="resource-link" href="materiales/04_demostracion_estadistica_descriptiva_visualizacion.html"
+             target="_blank" rel="noopener">
+            Abrir material <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <noscript>
+      <p class="noscript-note">
+        Activa JavaScript para cambiar entre las pestañas de las sesiones.
+      </p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p><strong>Andrés García Medina</strong></p>
+      <p>Herramientas Estadísticas y Computacionales para el Análisis de Datos en Investigación</p>
+    </div>
+    <p class="footer-year">2026</p>
+  </footer>
+</body>
+</html>
