@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Solución: limpieza de datos · Curso de capacitación docente</title><script src="../assets/vendor/requirejs/require.js"></script>
+<title>03_actividad_limpieza_datos_solucion</title><script src="file:///usr/share/javascript/requirejs/require.min.js"></script>
 
 
 
@@ -13990,7 +13990,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </style>
 
 <!-- Load mathjax -->
-    <script src="../assets/vendor/mathjax/MathJax.js?config=TeX-AMS_CHTML-full,Safe"> </script>
+    <script src="file:///usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full,Safe"> </script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     init_mathjax = function() {
@@ -14076,7 +14076,7 @@ Nota: Los datos son sintéticos.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14109,7 +14109,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 1: importa y audita la tabla.</span>
@@ -14127,7 +14127,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos_raw</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"datos_actividad_enzimatica_crudos.csv"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">","</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8-sig"</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s2">"muestra_id"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">})</span>
@@ -14155,7 +14155,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Dimensiones iniciales:"</span><span class="p">,</span> <span class="n">datos_raw</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -14206,7 +14206,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Duplicados exactos:"</span><span class="p">,</span> <span class="n">datos_raw</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -14245,7 +14245,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"IDs duplicados:"</span><span class="p">,</span> <span class="n">datos_raw</span><span class="p">[</span><span class="s2">"muestra_id"</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -14284,7 +14284,7 @@ valores faltantes, duplicados exactos y duplicados del identificador
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Valores faltantes:"</span><span class="p">)</span>
@@ -14324,7 +14324,7 @@ Valores faltantes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">datos_raw</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -14375,7 +14375,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tipos:"</span><span class="p">)</span>
@@ -14412,7 +14412,7 @@ temperatura_c                      object
 replica_biologica                   int64
 replica_tecnica                     int64
 tiempo_reaccion_min                object
-absorbancia_inicial_405             int64
+absorbancia_inicial_405           float64
 absorbancia_final_405              object
 observacion                       float64
 dtype: object
@@ -14429,7 +14429,7 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos_raw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14450,13 +14450,13 @@ dtype: object
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-c52b126d-7482-4de8-925c-6db133baec7c" class="colab-df-container">
+  <div id="df-9abd488e-5a9f-4aa9-b335-44594c770792" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -14501,8 +14501,8 @@ dtype: object
       <td>1</td>
       <td>1</td>
       <td>2.0</td>
-      <td>496</td>
-      <td>1.301</td>
+      <td>0.0496</td>
+      <td>0.1301</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -14516,8 +14516,8 @@ dtype: object
       <td>1</td>
       <td>2</td>
       <td>2.0</td>
-      <td>482</td>
-      <td>1.331</td>
+      <td>0.0482</td>
+      <td>0.1331</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -14531,8 +14531,8 @@ dtype: object
       <td>2</td>
       <td>1</td>
       <td>2.0</td>
-      <td>398</td>
-      <td>1.244</td>
+      <td>0.0398</td>
+      <td>0.1244</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -14546,8 +14546,8 @@ dtype: object
       <td>2</td>
       <td>2</td>
       <td>2.0</td>
-      <td>361</td>
-      <td>1.205</td>
+      <td>0.0361</td>
+      <td>0.1205</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -14561,8 +14561,8 @@ dtype: object
       <td>3</td>
       <td>1</td>
       <td>2.0</td>
-      <td>427</td>
-      <td>1.392</td>
+      <td>0.0427</td>
+      <td>0.1392</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -14571,7 +14571,7 @@ dtype: object
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c52b126d-7482-4de8-925c-6db133baec7c')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9abd488e-5a9f-4aa9-b335-44594c770792')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -14623,12 +14623,12 @@ dtype: object
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c52b126d-7482-4de8-925c-6db133baec7c button.colab-df-convert');
+        document.querySelector('#df-9abd488e-5a9f-4aa9-b335-44594c770792 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c52b126d-7482-4de8-925c-6db133baec7c');
+        const element = document.querySelector('#df-9abd488e-5a9f-4aa9-b335-44594c770792');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14679,7 +14679,7 @@ haber sido interpretadas como texto.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 2: muestra valores únicos y formula tu diagnóstico.</span>
@@ -14707,7 +14707,7 @@ haber sido interpretadas como texto.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columnas_diagnostico</span> <span class="o">=</span> <span class="p">[</span>
@@ -14735,7 +14735,7 @@ haber sido interpretadas como texto.</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -14818,7 +14818,7 @@ haber sido interpretadas como texto.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">columna</span> <span class="ow">in</span> <span class="n">columnas_diagnostico</span><span class="p">:</span>
@@ -14847,16 +14847,16 @@ haber sido interpretadas como texto.</p>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
 Valores de ph:
-[&#39;5&#39; &#39;pH 5&#39; &#39;ph_5&#39; &#39;6&#39; &#39;6.0&#39; &#39;7&#39; &#39;pH=7&#39; &#39;8&#39; &#39;PH 8&#39; &#39;9&#39;]
+[&#39;5&#39; &#39;pH 5&#39; &#39;ph_5&#39; &#39;6&#39; &#39;6.0&#39; &#39;7&#39; &#39;pH=7&#39; &#39;8&#39; &#39;PH 8&#39; &#39;9&#39; &#39;9 &#39;]
 
 Valores de temperatura_c:
-[&#39;25&#39; &#39;37&#39; &#39;37 °C&#39; &#39;45&#39; &#39;37C&#39; &#39;25 C&#39;]
+[&#39;25&#39; &#39;37&#39; &#39;37 °C&#39; &#39;45&#39; &#39;37C&#39; &#39;25 C&#39; &#39; 25 &#39;]
 
 Valores de tiempo_reaccion_min:
 [&#39;2.0&#39; &#39;120 s&#39;]
 
 Valores de operador:
-[&#39;Ana&#39; &#39;Luis&#39; &#39;ana&#39; &#39;LUIS&#39;]
+[&#39;Ana&#39; &#39;Luis&#39; &#39; ana &#39; &#39;LUIS&#39; &#39;Ana &#39;]
 </pre>
 </div>
 </div>
@@ -14904,7 +14904,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 3: transforma sin perder los valores originales.</span>
@@ -14932,7 +14932,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span> <span class="o">=</span> <span class="n">datos_raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14974,7 +14974,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.1. Conservar los valores originales</span>
@@ -15024,7 +15024,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -15126,7 +15126,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.1. Conservar los valores originales</span>
@@ -15176,7 +15176,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15278,7 +15278,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4.1. Conservar los valores originales</span>
@@ -15336,7 +15336,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -15438,7 +15438,7 @@ problemáticas y genera columnas normalizadas:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5.1. Conservar los valores originales</span>
@@ -15491,7 +15491,7 @@ problemáticas y genera columnas normalizadas:</p>
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Valores originales:
-[&#39;Ana&#39; &#39;Luis&#39; &#39;ana&#39; &#39;LUIS&#39;]
+[&#39;Ana&#39; &#39;Luis&#39; &#39; ana &#39; &#39;LUIS&#39; &#39;Ana &#39;]
 
 Valores normalizados:
 &lt;StringArray&gt;
@@ -15524,7 +15524,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 6.1. Conservar los valores originales</span>
@@ -15586,13 +15586,13 @@ Length: 2, dtype: string
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-c59fb432-db26-43dd-95ab-90bae523b99f" class="colab-df-container">
+  <div id="df-769334da-a0d4-4d2d-8e29-639b85bb7d19" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -15618,28 +15618,28 @@ Length: 2, dtype: string
   <tbody>
     <tr>
       <th>0</th>
-      <td>496</td>
-      <td>1.301</td>
+      <td>0.0496</td>
+      <td>0.1301</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>482</td>
-      <td>1.331</td>
+      <td>0.0482</td>
+      <td>0.1331</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>398</td>
-      <td>1.244</td>
+      <td>0.0398</td>
+      <td>0.1244</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>361</td>
-      <td>1.205</td>
+      <td>0.0361</td>
+      <td>0.1205</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>427</td>
-      <td>1.392</td>
+      <td>0.0427</td>
+      <td>0.1392</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15648,28 +15648,28 @@ Length: 2, dtype: string
     </tr>
     <tr>
       <th>86</th>
-      <td>434</td>
-      <td>1.293</td>
+      <td>0.0434</td>
+      <td>0.1293</td>
     </tr>
     <tr>
       <th>87</th>
-      <td>495</td>
-      <td>1.398</td>
+      <td>0.0495</td>
+      <td>0.1398</td>
     </tr>
     <tr>
       <th>88</th>
-      <td>483</td>
-      <td>1.405</td>
+      <td>0.0483</td>
+      <td>0.1405</td>
     </tr>
     <tr>
       <th>89</th>
-      <td>477</td>
-      <td>1.388</td>
+      <td>0.0477</td>
+      <td>0.1388</td>
     </tr>
     <tr>
       <th>90</th>
-      <td>496</td>
-      <td>1.619</td>
+      <td>0.0496</td>
+      <td>0.1619</td>
     </tr>
   </tbody>
 </table>
@@ -15678,7 +15678,7 @@ Length: 2, dtype: string
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c59fb432-db26-43dd-95ab-90bae523b99f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-769334da-a0d4-4d2d-8e29-639b85bb7d19')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -15730,12 +15730,12 @@ Length: 2, dtype: string
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c59fb432-db26-43dd-95ab-90bae523b99f button.colab-df-convert');
+        document.querySelector('#df-769334da-a0d4-4d2d-8e29-639b85bb7d19 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c59fb432-db26-43dd-95ab-90bae523b99f');
+        const element = document.querySelector('#df-769334da-a0d4-4d2d-8e29-639b85bb7d19');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -15791,7 +15791,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 4: elimina duplicados exactos y crea indicadores de calidad.</span>
@@ -15836,7 +15836,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_antes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
@@ -15889,7 +15889,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">es_duplicado_exacto</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span>
@@ -15915,13 +15915,13 @@ Length: 2, dtype: string
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-f81e4c84-9a1d-44f9-a977-9ac9852c3f5e" class="colab-df-container">
+  <div id="df-d372850c-7198-4718-b150-53fd6fe6f74f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -15966,8 +15966,8 @@ Length: 2, dtype: string
       <td>3</td>
       <td>1</td>
       <td>2.0</td>
-      <td>496</td>
-      <td>1.619</td>
+      <td>0.0496</td>
+      <td>0.1619</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -15981,8 +15981,8 @@ Length: 2, dtype: string
       <td>3</td>
       <td>1</td>
       <td>2.0</td>
-      <td>496</td>
-      <td>1.619</td>
+      <td>0.0496</td>
+      <td>0.1619</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -15991,7 +15991,7 @@ Length: 2, dtype: string
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f81e4c84-9a1d-44f9-a977-9ac9852c3f5e')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d372850c-7198-4718-b150-53fd6fe6f74f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -16043,12 +16043,12 @@ Length: 2, dtype: string
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f81e4c84-9a1d-44f9-a977-9ac9852c3f5e button.colab-df-convert');
+        document.querySelector('#df-d372850c-7198-4718-b150-53fd6fe6f74f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f81e4c84-9a1d-44f9-a977-9ac9852c3f5e');
+        const element = document.querySelector('#df-d372850c-7198-4718-b150-53fd6fe6f74f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -16108,7 +16108,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span>
@@ -16140,7 +16140,7 @@ Length: 2, dtype: string
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_duplicados_eliminados</span> <span class="o">=</span> <span class="n">n_antes</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
@@ -16207,7 +16207,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Identificadores faltantes</span>
@@ -16254,7 +16254,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Identificadores repetidos</span>
@@ -16279,7 +16279,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -16323,7 +16323,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_identificador"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16348,7 +16348,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -16380,7 +16380,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_ph"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16405,7 +16405,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -16486,7 +16486,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_temperatura"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16512,7 +16512,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
 
 
@@ -16545,7 +16545,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_tiempo"</span><span class="p">]</span> <span class="o">=</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span>
@@ -16571,7 +16571,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -16643,7 +16643,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_absorbancia_inicial"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16673,7 +16673,7 @@ Filas después de eliminar duplicados: 90
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>91
+<pre>0
 </pre>
 </div>
 </div>
@@ -16700,7 +16700,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_absorbancia_final"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16726,13 +16726,13 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>np.int64(54)</pre>
+<pre>np.int64(2)</pre>
 </div>
 
 </div>
@@ -16758,7 +16758,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_orden_absorbancias"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -16788,13 +16788,13 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>np.int64(88)</pre>
+<pre>np.int64(0)</pre>
 </div>
 
 </div>
@@ -16835,7 +16835,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">flags_validacion</span> <span class="o">=</span> <span class="p">[</span>
@@ -16871,7 +16871,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"requiere_revision"</span><span class="p">]</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span>
@@ -16901,7 +16901,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="n">datos</span><span class="p">[</span><span class="s2">"requiere_revision"</span><span class="p">]]</span>
@@ -16922,13 +16922,13 @@ Filas después de eliminar duplicados: 90
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-404551b4-915b-45a0-94c5-f522f96f5995" class="colab-df-container">
+  <div id="df-1b4a2692-a924-4b56-a9d3-905587fee9d3" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -16972,65 +16972,17 @@ Filas después de eliminar duplicados: 90
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>AE-PH5-T25-B1-R1</td>
-      <td>2026-07-20</td>
-      <td>L01</td>
-      <td>Ana</td>
-      <td>5</td>
-      <td>25</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>496</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>AE-PH5-T25-B1-R2</td>
-      <td>2026-07-20</td>
-      <td>L01</td>
-      <td>Ana</td>
-      <td>5</td>
-      <td>25</td>
-      <td>1</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>482</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AE-PH5-T25-B2-R1</td>
+      <th>51</th>
+      <td>AE-PH7-T45-B2-R2</td>
       <td>2026-07-21</td>
       <td>L02</td>
       <td>Luis</td>
-      <td>5</td>
-      <td>25</td>
+      <td>7</td>
+      <td>45</td>
       <td>2</td>
-      <td>1</td>
+      <td>2</td>
       <td>2.0</td>
-      <td>398</td>
+      <td>0.0397</td>
       <td>...</td>
       <td>False</td>
       <td>False</td>
@@ -17038,119 +16990,23 @@ Filas después de eliminar duplicados: 90
       <td>False</td>
       <td>False</td>
       <td>False</td>
+      <td>False</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>AE-PH5-T25-B2-R2</td>
+      <th>68</th>
+      <td>AE-PH8-T45-B2-R1</td>
       <td>2026-07-21</td>
       <td>L02</td>
       <td>Luis</td>
-      <td>5</td>
-      <td>25</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>361</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>AE-PH5-T25-B3-R1</td>
-      <td>2026-07-22</td>
-      <td>L03</td>
-      <td>Ana</td>
-      <td>pH 5</td>
-      <td>25</td>
-      <td>3</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>427</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>AE-PH9-T45-B1-R2</td>
-      <td>2026-07-20</td>
-      <td>L01</td>
-      <td>Ana</td>
-      <td>9</td>
-      <td>45</td>
-      <td>1</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>522</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>AE-PH9-T45-B2-R1</td>
-      <td>2026-07-21</td>
-      <td>L02</td>
-      <td>Luis</td>
-      <td>9</td>
+      <td>8</td>
       <td>45</td>
       <td>2</td>
       <td>1</td>
       <td>2.0</td>
-      <td>434</td>
+      <td>0.0497</td>
       <td>...</td>
       <td>False</td>
       <td>False</td>
@@ -17158,91 +17014,19 @@ Filas después de eliminar duplicados: 90
       <td>False</td>
       <td>False</td>
       <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>AE-PH9-T45-B2-R2</td>
-      <td>2026-07-21</td>
-      <td>L02</td>
-      <td>Luis</td>
-      <td>9</td>
-      <td>45</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>495</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>AE-PH9-T45-B3-R1</td>
-      <td>2026-07-22</td>
-      <td>L03</td>
-      <td>Ana</td>
-      <td>9</td>
-      <td>45</td>
-      <td>3</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>483</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>AE-PH9-T45-B3-R2</td>
-      <td>2026-07-22</td>
-      <td>L03</td>
-      <td>Ana</td>
-      <td>9</td>
-      <td>45</td>
-      <td>3</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>477</td>
-      <td>...</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
       <td>True</td>
     </tr>
   </tbody>
 </table>
-<p>90 rows × 34 columns</p>
+<p>2 rows × 34 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-404551b4-915b-45a0-94c5-f522f96f5995')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1b4a2692-a924-4b56-a9d3-905587fee9d3')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -17294,12 +17078,12 @@ Filas después de eliminar duplicados: 90
 
     <script>
       const buttonEl =
-        document.querySelector('#df-404551b4-915b-45a0-94c5-f522f96f5995 button.colab-df-convert');
+        document.querySelector('#df-1b4a2692-a924-4b56-a9d3-905587fee9d3 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-404551b4-915b-45a0-94c5-f522f96f5995');
+        const element = document.querySelector('#df-1b4a2692-a924-4b56-a9d3-905587fee9d3');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -17347,7 +17131,7 @@ Filas después de eliminar duplicados: 90
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span>
@@ -17386,13 +17170,13 @@ Filas después de eliminar duplicados: 90
 <pre>Duplicados exactos eliminados: 1
 
 Número de incidencias por validación:
-flag_absorbancia_inicial    90
-flag_orden_absorbancias     88
-flag_absorbancia_final      54
-flag_temperatura             0
-flag_ph                      0
-flag_identificador           0
-flag_tiempo                  0
+flag_absorbancia_final      2
+flag_ph                     0
+flag_identificador          0
+flag_temperatura            0
+flag_tiempo                 0
+flag_absorbancia_inicial    0
+flag_orden_absorbancias     0
 dtype: Int64
 </pre>
 </div>
@@ -17419,7 +17203,7 @@ dtype: Int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columnas_revision</span> <span class="o">=</span> <span class="p">[</span>
@@ -17458,13 +17242,13 @@ dtype: Int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-a018891f-b7af-4671-a66a-4d48bf2973fb" class="colab-df-container">
+  <div id="df-da42c13e-2962-45d1-83c4-2b5e63789067" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -17505,244 +17289,54 @@ dtype: Int64
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>AE-PH5-T25-B1-R1</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>25</td>
-      <td>25</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>496</td>
-      <td>496</td>
-      <td>1.301</td>
-      <td>1.301</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>AE-PH5-T25-B1-R2</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>25</td>
-      <td>25</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>482</td>
-      <td>482</td>
-      <td>1.331</td>
-      <td>1.331</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AE-PH5-T25-B2-R1</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>25</td>
-      <td>25</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>398</td>
-      <td>398</td>
-      <td>1.244</td>
-      <td>1.244</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AE-PH5-T25-B2-R2</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>25</td>
-      <td>25</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>361</td>
-      <td>361</td>
-      <td>1.205</td>
-      <td>1.205</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>AE-PH5-T25-B3-R1</td>
-      <td>pH 5</td>
-      <td>5.0</td>
-      <td>25</td>
-      <td>25</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>427</td>
-      <td>427</td>
-      <td>1.392</td>
-      <td>1.392</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>AE-PH9-T45-B1-R2</td>
-      <td>9</td>
-      <td>9.0</td>
+      <th>51</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>7</td>
+      <td>7.0</td>
       <td>45</td>
       <td>45</td>
       <td>2.0</td>
       <td>2.0</td>
-      <td>522</td>
-      <td>522</td>
-      <td>1.235</td>
-      <td>1.235</td>
+      <td>0.0397</td>
+      <td>0.0397</td>
+      <td>NaN</td>
+      <td>&lt;NA&gt;</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
     </tr>
     <tr>
-      <th>86</th>
-      <td>AE-PH9-T45-B2-R1</td>
-      <td>9</td>
-      <td>9.0</td>
+      <th>68</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>8</td>
+      <td>8.0</td>
       <td>45</td>
       <td>45</td>
       <td>2.0</td>
       <td>2.0</td>
-      <td>434</td>
-      <td>434</td>
-      <td>1.293</td>
-      <td>1.293</td>
+      <td>0.0497</td>
+      <td>0.0497</td>
+      <td>2.504</td>
+      <td>2.504</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>AE-PH9-T45-B2-R2</td>
-      <td>9</td>
-      <td>9.0</td>
-      <td>45</td>
-      <td>45</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>495</td>
-      <td>495</td>
-      <td>1.398</td>
-      <td>1.398</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>AE-PH9-T45-B3-R1</td>
-      <td>9</td>
-      <td>9.0</td>
-      <td>45</td>
-      <td>45</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>483</td>
-      <td>483</td>
-      <td>1.405</td>
-      <td>1.405</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>AE-PH9-T45-B3-R2</td>
-      <td>9</td>
-      <td>9.0</td>
-      <td>45</td>
-      <td>45</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>477</td>
-      <td>477</td>
-      <td>1.388</td>
-      <td>1.388</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
     </tr>
   </tbody>
 </table>
-<p>90 rows × 18 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a018891f-b7af-4671-a66a-4d48bf2973fb')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-da42c13e-2962-45d1-83c4-2b5e63789067')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -17794,12 +17388,12 @@ dtype: Int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a018891f-b7af-4671-a66a-4d48bf2973fb button.colab-df-convert');
+        document.querySelector('#df-da42c13e-2962-45d1-83c4-2b5e63789067 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a018891f-b7af-4671-a66a-4d48bf2973fb');
+        const element = document.querySelector('#df-da42c13e-2962-45d1-83c4-2b5e63789067');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -17849,7 +17443,7 @@ procedieron.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 5: aplica las correcciones verificadas. No imputes por promedio.</span>
@@ -17877,7 +17471,7 @@ procedieron.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">correcciones</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
@@ -17903,57 +17497,198 @@ procedieron.</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1448/1679495755.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> correcciones = pd.read_csv(
-</span><span class="ansi-green-intense-fg ansi-bold">      2</span>     <span class="ansi-blue-fg">&#34;registro_correcciones_laboratorio.csv&#34;</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span>     encoding<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;utf-8-sig&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> )
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
 
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1024</span>     kwds<span class="ansi-blue-fg">.</span>update<span class="ansi-blue-fg">(</span>kwds_defaults<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1025</span> 
-<span class="ansi-green-fg">-&gt; 1026</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> _read<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">,</span> kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1027</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1028</span> 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    618</span> 
-<span class="ansi-green-intense-fg ansi-bold">    619</span>     <span class="ansi-red-fg"># Create the parser.</span>
-<span class="ansi-green-fg">--&gt; 620</span><span class="ansi-red-fg">     </span>parser <span class="ansi-blue-fg">=</span> TextFileReader<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    621</span> 
-<span class="ansi-green-intense-fg ansi-bold">    622</span>     <span class="ansi-green-fg">if</span> chunksize <span class="ansi-green-fg">or</span> iterator<span class="ansi-blue-fg">:</span>
+  <div id="df-1714e0e0-6fbd-4407-8229-73a3995deab3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1618</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1619</span>         self<span class="ansi-blue-fg">.</span>handles<span class="ansi-blue-fg">:</span> IOHandles <span class="ansi-blue-fg">|</span> <span class="ansi-green-fg">None</span> <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">None</span>
-<span class="ansi-green-fg">-&gt; 1620</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_engine <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_make_engine<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>engine<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1621</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1622</span>     <span class="ansi-green-fg">def</span> close<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ansi-cyan-fg">_make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1878</span>                 <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">&#34;b&#34;</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">in</span> mode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1879</span>                     mode <span class="ansi-blue-fg">+=</span> <span class="ansi-blue-fg">&#34;b&#34;</span>
-<span class="ansi-green-fg">-&gt; 1880</span><span class="ansi-red-fg">             self.handles = get_handle(
-</span><span class="ansi-green-intense-fg ansi-bold">   1881</span>                 f<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1882</span>                 mode<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/common.py</span> in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    871</span>         <span class="ansi-green-fg">if</span> ioargs<span class="ansi-blue-fg">.</span>encoding <span class="ansi-green-fg">and</span> <span class="ansi-blue-fg">&#34;b&#34;</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">in</span> ioargs<span class="ansi-blue-fg">.</span>mode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    872</span>             <span class="ansi-red-fg"># Encoding</span>
-<span class="ansi-green-fg">--&gt; 873</span><span class="ansi-red-fg">             handle = open(
-</span><span class="ansi-green-intense-fg ansi-bold">    874</span>                 handle<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    875</span>                 ioargs<span class="ansi-blue-fg">.</span>mode<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;registro_correcciones_laboratorio.csv&#39;</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>campo</th>
+      <th>valor_corregido</th>
+      <th>fuente</th>
+      <th>motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>absorbancia_final_405</td>
+      <td>0.3033</td>
+      <td>Bitácora espectrofotómetro EQ-405, corrida 202...</td>
+      <td>Valor omitido durante la transcripción</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>absorbancia_final_405</td>
+      <td>0.2504</td>
+      <td>Bitácora espectrofotómetro EQ-405, corrida 202...</td>
+      <td>Punto decimal desplazado durante la captura</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1714e0e0-6fbd-4407-8229-73a3995deab3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1714e0e0-6fbd-4407-8229-73a3995deab3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1714e0e0-6fbd-4407-8229-73a3995deab3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+  <div id="id_05f5e9f3-75c0-4407-843f-288724e6c535">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('correcciones')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_05f5e9f3-75c0-4407-843f-288724e6c535 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('correcciones');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+
 </div>
 
 </div>
@@ -18013,12 +17748,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ids_corregidos</span> <span class="o">=</span> <span class="n">correcciones</span><span class="p">[</span><span class="s2">"muestra_id"</span><span class="p">]</span>
@@ -18038,6 +17773,153 @@ procedieron.</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-100aabdc-c3c5-4fd7-ab53-4f5c64753f05" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>absorbancia_inicial_405_num</th>
+      <th>absorbancia_final_405_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>51</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>0.0397</td>
+      <td>&lt;NA&gt;</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>0.0497</td>
+      <td>2.504</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-100aabdc-c3c5-4fd7-ab53-4f5c64753f05')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-100aabdc-c3c5-4fd7-ab53-4f5c64753f05 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-100aabdc-c3c5-4fd7-ab53-4f5c64753f05');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18055,7 +17937,7 @@ procedieron.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Primera corrección: valor omitido</span>
@@ -18101,12 +17983,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bitacora_calidad</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -18144,6 +18026,217 @@ procedieron.</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-e9c25be4-065e-43ce-bf6a-2aab59a67885" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>campo_modificado</th>
+      <th>valor_anterior</th>
+      <th>valor_corregido</th>
+      <th>fuente</th>
+      <th>motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>absorbancia_final_405_num</td>
+      <td>NaN</td>
+      <td>0.3033</td>
+      <td>Bitácora espectrofotómetro EQ-405, corrida 202...</td>
+      <td>Valor omitido durante la transcripción</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>absorbancia_final_405_num</td>
+      <td>2.504</td>
+      <td>0.2504</td>
+      <td>Bitácora espectrofotómetro EQ-405, corrida 202...</td>
+      <td>Punto decimal desplazado durante la captura</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e9c25be4-065e-43ce-bf6a-2aab59a67885')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-e9c25be4-065e-43ce-bf6a-2aab59a67885 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-e9c25be4-065e-43ce-bf6a-2aab59a67885');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+  <div id="id_ac81d1cb-f70c-414e-af73-7e3cf1926f8b">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('bitacora_calidad')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_ac81d1cb-f70c-414e-af73-7e3cf1926f8b button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('bitacora_calidad');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18156,12 +18249,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span>
@@ -18173,6 +18266,29 @@ procedieron.</p>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Número de valores corregidos: 2
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -18187,12 +18303,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span>
@@ -18210,6 +18326,153 @@ procedieron.</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-bf6a942c-6b2e-4cb2-9053-0d5f337c845c" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>absorbancia_inicial_405_num</th>
+      <th>absorbancia_final_405_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>51</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>0.0397</td>
+      <td>0.3033</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>0.0497</td>
+      <td>0.2504</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bf6a942c-6b2e-4cb2-9053-0d5f337c845c')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bf6a942c-6b2e-4cb2-9053-0d5f337c845c button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bf6a942c-6b2e-4cb2-9053-0d5f337c845c');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18222,12 +18485,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"flag_absorbancia_final"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -18252,6 +18515,31 @@ procedieron.</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>np.int64(0)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18264,12 +18552,12 @@ procedieron.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span>
@@ -18286,6 +18574,156 @@ procedieron.</p>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-c4a06dbc-8187-41ec-8a6b-4a71a0db2397" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>absorbancia_final_405_num</th>
+      <th>flag_absorbancia_final</th>
+      <th>flag_orden_absorbancias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>51</th>
+      <td>AE-PH7-T45-B2-R2</td>
+      <td>0.3033</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>AE-PH8-T45-B2-R1</td>
+      <td>0.2504</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c4a06dbc-8187-41ec-8a6b-4a71a0db2397')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c4a06dbc-8187-41ec-8a6b-4a71a0db2397 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c4a06dbc-8187-41ec-8a6b-4a71a0db2397');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -18310,7 +18748,7 @@ $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 6: crea actividad_u_ml y confirma que no existan valores faltantes.</span>
@@ -18375,7 +18813,7 @@ $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">"actividad_u_ml"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -18411,7 +18849,7 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 7: tabla de conteos y gráfica.</span>
@@ -18451,7 +18889,7 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columnas_salida</span> <span class="o">=</span> <span class="p">[</span>
@@ -18501,12 +18939,12 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos_limpios</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -18515,6 +18953,231 @@ exploratoria de actividad por pH, separada por temperatura.</p>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-0e637fef-619d-45b6-88cc-b8b1b3fe3a65" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>muestra_id</th>
+      <th>fecha</th>
+      <th>lote_enzima</th>
+      <th>operador</th>
+      <th>ph</th>
+      <th>temperatura_c</th>
+      <th>replica_biologica</th>
+      <th>replica_tecnica</th>
+      <th>tiempo_reaccion_min</th>
+      <th>absorbancia_inicial_405</th>
+      <th>absorbancia_final_405</th>
+      <th>actividad_u_ml</th>
+      <th>observacion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AE-PH5-T25-B1-R1</td>
+      <td>2026-07-20</td>
+      <td>L01</td>
+      <td>Ana</td>
+      <td>5.0</td>
+      <td>25</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>0.0496</td>
+      <td>0.1301</td>
+      <td>0.4025</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AE-PH5-T25-B1-R2</td>
+      <td>2026-07-20</td>
+      <td>L01</td>
+      <td>Ana</td>
+      <td>5.0</td>
+      <td>25</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>0.0482</td>
+      <td>0.1331</td>
+      <td>0.4245</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AE-PH5-T25-B2-R1</td>
+      <td>2026-07-21</td>
+      <td>L02</td>
+      <td>Luis</td>
+      <td>5.0</td>
+      <td>25</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>0.0398</td>
+      <td>0.1244</td>
+      <td>0.423</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AE-PH5-T25-B2-R2</td>
+      <td>2026-07-21</td>
+      <td>L02</td>
+      <td>Luis</td>
+      <td>5.0</td>
+      <td>25</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>0.0361</td>
+      <td>0.1205</td>
+      <td>0.422</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AE-PH5-T25-B3-R1</td>
+      <td>2026-07-22</td>
+      <td>L03</td>
+      <td>Ana</td>
+      <td>5.0</td>
+      <td>25</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>0.0427</td>
+      <td>0.1392</td>
+      <td>0.4825</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0e637fef-619d-45b6-88cc-b8b1b3fe3a65')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-0e637fef-619d-45b6-88cc-b8b1b3fe3a65 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-0e637fef-619d-45b6-88cc-b8b1b3fe3a65');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -18529,12 +19192,12 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">conteos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">datos_limpios</span><span class="p">[</span><span class="s1">'ph'</span><span class="p">],</span> <span class="n">datos_limpios</span><span class="p">[</span><span class="s1">'temperatura_c'</span><span class="p">])</span>
@@ -18545,6 +19208,232 @@ exploratoria de actividad por pH, separada por temperatura.</p>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+  <div id="df-d408f249-a131-4f93-9679-eb0dbadf9d5a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>temperatura_c</th>
+      <th>25</th>
+      <th>37</th>
+      <th>45</th>
+    </tr>
+    <tr>
+      <th>ph</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5.0</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6.0</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>7.0</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>8.0</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>9.0</th>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d408f249-a131-4f93-9679-eb0dbadf9d5a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d408f249-a131-4f93-9679-eb0dbadf9d5a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d408f249-a131-4f93-9679-eb0dbadf9d5a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+  <div id="id_40cc5e3c-6f16-4f80-8d29-19a7cbcbec76">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('conteos')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_40cc5e3c-6f16-4f80-8d29-19a7cbcbec76 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('conteos');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -18560,12 +19449,12 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -18604,6 +19493,35 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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JhI4Moqo0oqOjkZMTAxOnToFiURi7nCoAs6cOYN3330XS5cuRc+ePc0dDhkAv59EVNVwjAMREREREWnExIGIiIiIiDRi4kBERERERBpxjAMREREREWnEFgciIiIiItKIiQMREREREWnExIGIiIiIiDTiAnBluHjxIgRBgI2NjblDISIiokqgsLAQIpEIfn5+5g6FyCiYOJRBEARw3DgRERFpi9cNVNUxcShDSUtDq1atzBwJERERVQZXrlwxdwhERsUxDkREREREpBETByIiIiIi0oiJAxERERERacTEgYiIiIiINOLgaCIiIiILVVxcjMLCQnOHQVWUjY0NrK2ttd6fiQMRERGRhREEAf/99x8yMzM5zSsZjUgkgrOzM+rXrw+RSKRxfyYORERERBYmMzMTjx49gqurK5ycnLS6qCPShSAIyMnJQXp6OhwcHODi4qKxDhMHIiIiIgsiCALu378PsViMunXrmjscqsIcHBxQUFCA+/fvw9nZWWOCalGDo5OTkzFr1iz069cPzZs3R9++fbWum5aWhilTpqBDhw5o3bo1evXqhT179hgxWiIiIiLDKy4uRnFxMcRisblDoWpALBYrP3OaWFSLw61btxAfH482bdpAoVBo3afv/v37GDx4MDw8PDBnzhzUrFkTt27dwpMnT4wcMREREZFhFRUVAQBq1LCoyzSqoko+Z0VFRRo/cxb1iQwJCUFoaCgAYOrUqfjrr7+0qrdw4ULUr18fa9euVY4MDwwMNFqcRERERMbGcQ1kCrp8ziyqq5KVle7hPH78GPv378c777yj03RSRERERESkPYtqcdDH1atXUVhYiBo1aiA8PBwXL16Ei4sL+vfvj/Hjx8PGxsbcIRJRJZWcnIysrCyd64nFYjRu3NgIERERUVXw+eefIzk5GRs2bCi17cmTJ7C1ta3Q8RMSEjBu3DgcPnwYEomkQsd6VqVPHB48eAAAmDFjBgYNGoQxY8bg8uXLiIqKgpWVFSZNmqT3sQVBQG5urqFCJSILlJqaiocPH5Yqz8rKwogRI6BQKHQ+ppWVFdavX692YGPt2rXRsGFDvWIlIssmCILRuxf5+Photd+mTZsQEBBg1Fgs1ebNm+Hg4IABAwaYOxS1UlJS8NNPP2Ht2rUq5VevXsWkSZPwzz//wN/fH4sXL0aDBg1K1T948CC2b9+OK1euICcnBy4uLnjppZcQFham7KofFBSERo0aYdWqVZg2bZrBYq/0iUPJH/WOHTti6tSpAIAOHTogJycH69evx+jRo2Fvb6/XsQsLC3Ht2jWDxUpEliU9PR2jR482+EQKCoUCw4cPV7vN1tYWy5Ytg6urq0HPSUSWoaJ3ijVZsGCByuPdu3fjxIkTpcqbNm1q1Dgs2datW1G7dm2LTRw2bdoEqVSKDh06qJRPnDgRAQEBmDx5Mnbt2oVZs2ZhzZo1yu2CIGD69OnYuXMnmjdvjvfeew9169ZFeno6Dh48iOHDh2Pr1q3w9/cHAAwePBgLFizA2LFjUbNmTYPEXukTh5I7es+/+IGBgVi5ciWSk5O1zs6fZ2NjAy8vrwrHSESWSaFQ4MmTJ+jZvBskTi5GP5885xHi/j6KOnXqwNfX1+jnIyLTSkxMNPo5+vXrp/L4zz//xIkTJ0qVVxWCIKCgoEDvm8CWFkdhYSH27t2LsLAwlXK5XI6HDx/iiy++AAC0b98eQUFBKvusX78eO3fuxLBhwzBt2jSV1q2PPvoIu3btUpkVqUePHpg7dy7i4uLw5ptvVijuEpU+cdB0YV9QUKD3sUUiERwdHfWuT0SWzVx/iOzt7fnbQlQFWcosSAqFAps2bcKPP/6Iu3fvolatWggNDcWkSZPg7Oys3C8kJAQvvvgiRowYga+//hqJiYlo3LgxZsyYgYCAAPz222+Ijo7GP//8gxdffBFz585F8+bNlfWnTp2KAwcOYM+ePfj8889x/vx51KxZE2FhYRg9erTK66FrTOHh4ViyZAlu3bqFSZMmYfjw4dixYwd2796NW7duITs7G40aNUJ4eDjeeecdlfoymQzA/3Xrat++PWJjYxEdHY2YmBjcuHFD5fXauXMnpk2bhsOHD8PNzc0gcZTl/PnzePjwITp27KhSXrJq8+bNmxEUFISffvoJTZo0UW7Pz8/H6tWr4enpiSlTpqj9rPXv31/lcZ06deDj44PDhw8zcSghlUrh7e2NkydPIjw8XFl+8uRJ2Nvbs8WAiDSK+/uouUMgIjKYWbNm4eeff8aAAQMwdOhQ3Lt3D5s3b8bff/+NrVu3qkwck5ycjEmTJiEsLAyvv/461q9fj4iICMyePRtLlizB22+/DQBYvXo1xo8fj7i4OJVZMIuLi/H++++jTZs2mDx5Mo4fP47o6GgUFxdj3LhxesV0584dTJo0CYMHD8agQYPg4eEB4GkXpBdffBEhISGoUaMGjh49itmzZ0MQBAwZMgQAMH36dMyZMweOjo6IiIgAAL1X365IHGW5ePEiRCKRSgIGPB0bN2vWLEybNg1ffPEFXFxcsGLFCuX28+fP49GjR3j33Xd1mkW0RYsWOHTokA7PunwWlTjk5eUhPj4eACCTyfD48WPExcUBeJotSiQSDBs2DKmpqTh48KCy3oQJE/C///0PX375JYKDg3HlyhWsX78eI0eO5F09ItLI1F2ViIiM5dy5c/jxxx+xaNEivPbaa8rygIAAvP/++4iLi1Mpv3PnDrZt2wY/Pz8AT3tyjBw5EjNnzsT+/fuVkzk4Oztj1qxZ+OOPP1QGXRcUFKBLly6YMWMGAOCdd95BREQE1qxZg6FDh0IikegcU3JyMtauXYsuXbqoPLfvv/9epaU4PDwcI0eOxIYNG5QX7KGhofj2229Ru3btCnffqkgcZbl9+zacnZ3Vjjno27cvOnbsiJSUFDRt2lRln6SkJADaD44v4e7ujocPHyIjIwN16tTRqa46FrWOQ0ZGBsaNG4dx48bh7Nmz+Pfff5WPb926BeBpU9fzS2KHhITgm2++walTpzBq1Cj88MMPGDt2LMaPH2+GZ0FERERkHnFxcahVqxY6deoEuVyu/K9FixZwdHTEmTNnVPb38vJSJg0A0KZNGwBPx44+OwNcSXlKSkqpcz57sSwSiTBkyBAUFhbi1KlTesXk5uZW6mIdUO1emp2dDblcjvbt2yMlJQXZ2dlav0baMkYcjx49Uuma9TyJRII2bdqUSiweP34MAHByctLlKSjHAqubPVAfFtXi4ObmVqrf2fNiY2PVlvfu3Ru9e/c2RlhEVEVJJBLY29mbtBXA3s7eoHNqExE9Kzk5GdnZ2cppOZ+XkZGh8vj56T5r1aoFAKhfv75KecmF7PNr21hZWcHd3V2lrKRLT8lYA11jKhln8Lzz588jOjoaly5dQl5ensq27OxsZeyGYqw4BEHQOZaS1z8nJ0eneiXnMtT4G4tKHIiITEkqleJY/DHI5XKd6iUmJiIyMhJRUVE6j6OSSCSQSqU61SEi0pZCoUCdOnWwaNEitdufv3FRVn/5ssr1uejVNSZ1E1fcvXsXw4cPh6enJ6ZOnYoGDRrAxsYG8fHx+O6777Rac6esi+fne7IYMw4XFxe9Fhb19PQEANy4cQOhoaFa1ys5V+3atXU+pzpMHIioWpNKpWVeyHPlaCKqbBo1aoRTp07B39/fJDPHKRQKpKSkKFsZgKfjJgAof1sNEdORI0fw5MkTrFixQqUL1fPdnICyE4SSbjtZWVkqC3SmpqYaJQ51PD09sXfvXp1bSF566SU4Ozvj119/RUREhNYDpO/du4fatWsbrKXbosY4EBFZCrlcjqCgIGU3yGf/i4yMBABERkaq3d61a1edWzGIiAyhV69eKC4uxvLly0ttKyoq0utmiCabN29W/r8gCNi8eTNsbGyUXZMMEVPJhfKzLR7Z2dnYsWNHqX0dHBzUHrNRo0YAgD/++ENZlpubi127dmk8vz5xqNO2bVsIgoC//vpL63MCT5/T+++/j6SkJCxatEhty8/u3btx+fJllbKrV6+ibdu2Op2rPGxxICJSQyKRICEhQe8WB45jICJzaN++PQYPHoxVq1bh2rVr6NSpE2xsbPDPP/8gLi4On376KXr27Gmw89nZ2eH48eOYMmUKWrdujePHj+PYsWOIiIhQ/g4aIqaSOhEREQgLC0NOTg5+/PFH1KlTB+np6Sr7tmjRAlu3bsXy5cvRuHFjSCQSBAYGolOnTmjYsCE+/fRT3L59G9bW1tixYwdq166tdauDLnGo89JLL8HFxQWnTp0qc8xHWd5//30kJiZi/fr1OHPmDHr06IG6deviwYMHOHToEC5fvoxt27Yp98/IyMCNGze0Wl9CW0wciIjKwO5GRFQZffHFF2jZsiW2bduGJUuWwNraGlKpFK+//jr8/f0Nei5ra2usXbsWn3/+ORYuXAgnJyeMGTMGo0ePNmhMnp6eiIqKwrfffouvv/4adevWxdtvvw2JRILp06er7Dt69GikpqZi7dq1yMnJQfv27REYGAgbGxvExMRg9uzZWLp0KVxdXTFs2DCIxWJMmzZNq+erSxzq2Nra4rXXXkNcXBwmTpyo1TlLWFlZYcGCBXjllVfwww8/YP369Xj8+DFq166Ndu3aYfLkySozZP3222+wtbVFr169dDpPeUSCPqNcqoErV64AAFq1amXmSIiIiKgyMNS1Q35+Pu7cuQMPDw+zrXCvjZKVoy9evGjuUCqVlJQU9OrVC2vWrNG51UEX/fv3R/v27TUmNLp83jjGgYiIiIjIRNzd3TFw4ECsXr3aaOdISEhAcnIyRo0aZdDjsqsSEREREZEJzZ4926jHDwoKMkpLEFsciIiIiIhIIyYORERERKSz+fPnc3xDNcPEgYiIiIiINGLiQEREREREGjFxICIiIiIijZg4EBERERGRRkwciIiIiIhIIyYORERERESkEReAIyIiIqJqa//+/dizZw+uXr2KrKwsNG7cGEOHDsXAgQMhEokAAEOHDsXZs2dL1d23bx+aNm1q6pDNhokDERERERmMTCaDXC43y7klEgmkUqlOdb777jtIpVJMnToVtWvXxsmTJzFz5kz8999/GDNmjHI/f39/TJkyRaWum5ubQeKuLJg4EBEREZFByGQydOvWDXl5eWY5v4ODA44ePapT8rBixQpIJBLl48DAQDx69AgbNmzA//73P1hZPe3ZLxaL0bZtW0OHXKkwcSAiIiIig5DL5cjLy8OcTybBw93dpOe+k5KCmQsWQy6X65Q4PJs0lPD19cUPP/yA3Nxc1KxZ05BhVmpMHIiIiIjIoDzc3eH7ope5w9Db+fPnUa9ePZWk4ezZs2jbti2Ki4vRpk0bjBs3Du3atTNjlKbHxIGIiIiI6P87d+4c9u3bpzKeoV27dujXrx+aNGmC+/fvY926dXjvvfcQGxsLPz8/M0ZrWkwciIiIiIgA/Pfff5gwYQICAgLw7rvvKssjIyNV9gsODkbfvn2xfPlyrFmzxtRhmg3XcSAiIiKiai8rKwsffPABXFxcEB0drRwUrY6joyO6du2Kq1evmjBC82OLAxERERFVa/n5+Rg1ahSys7Oxfft21KpVy9whWSQmDkRERERUbRUVFWH8+PG4ffs2Nm/ejHr16mmsk5ubi2PHjqFVq1YmiNByMHEgIiIiompr9uzZOHr0KKZOnYrHjx/j0qVLym3NmzfH5cuXsXbtWnTv3h1SqRT379/Hhg0bkJ6ejqVLl5ovcDNg4kBEREREBnUnJaXSnPPEiRMAgPnz55fadvjwYbi6uqKwsBBLlizBo0eP4ODgAD8/P8yePRutW7euUMyVDRMHIiIiIjIIiUQCBwcHzFyw2Cznd3BwULugW3mOHDmicZ9169bpG1KVwsSBiIiIiAxCKpXi6NGjkMvlZjm/RCLRadVo0g0TByIiIiIyGKlUyov3KorrOBARERERkUZMHIiIiIiISCMmDkREREREpBETByIiIiIi0oiJAxERERERaWRRiUNycjJmzZqFfv36oXnz5ujbt6/Ox/juu+/g4+ODUaNGGSFCIiIiIqLqyaKmY7116xbi4+PRpk0bKBQKCIKgU/309HQsW7YMderUMVKERERERETVk0W1OISEhCA+Ph5RUVFo0aKFzvUXLlyIkJAQNG3a1AjRERERERFVXxbV4mBlpX8ec+7cORw6dAhxcXGYNGmSAaMiIiIiIm3JZLJKtXJ0fHw81qxZg8TERDx+/Bj16tVDaGgoxowZg1q1agEAfHx8yqx//PhxvPDCCxWKu7KwqMRBX8XFxZgzZw4iIiKqzRtHREREZGlkMhmCuwYjvyDfLOe3t7PHsfhjOiUPjx49QuvWrTF06FC4uLjg1q1biI6Oxq1bt7B+/XoAwPbt20vVmzJlChwcHKrVtWeVSBy2bNmCvLw8DB8+3KDHFQQBubm5Bj0mERERVU2CIEAkEpk7DLOSy+XIL8hHz+bdIHFyMe25cx4h7u+jkMvlOiUO/fr1U3kcEBAAW1tbzJw5E2lpaahXrx7atm2rss+9e/fwzz//YPLkyYYIvdKo9IlDRkYGoqKi8PXXX8PW1tagxy4sLMS1a9cMekwiIiKqugx9LVJZSZxc8EKtuuYOQ28uLi4Anl4LqvPLL79AJBLpNQNoZVbpE4elS5fCx8cHL7/8MrKysgAARUVFKCoqQlZWFhwdHVGjhn5P08bGBl5eXoYMl4iIiKqoxMREc4dAFVBcXIyioiIkJiZi2bJlCAkJgZubm9p9f/31V7Rr1w7169c3cZTmVekThzt37uCPP/5Au3btSm1r164d1qxZg6CgIL2OLRKJ4OjoWNEQiYiIqBqo7t2UKrtu3bohLS0NANClSxcsXrxY7X7Xr1/HzZs38cUXX5gyPItQ6ROH6dOnK1saSsybNw/29vaYOHFiuaPgiYiIiIgAYPXq1cjLy0NiYiJWrFiBiIgIbNiwAdbW1ir77d27FzY2NujRo4eZIjUfi0oc8vLyEB8fD+DpqPzHjx8jLi4OANC+fXtIJBIMGzYMqampOHjwIADA19e31HHEYjEcHR0REBBguuCJiIiIqNJq1qwZAMDPzw+tWrVCv379cPDgQfTs2VO5jyAI2LdvH7p06aIcB1GdWFTikJGRgXHjxqmUlTzetGkTAgICoFAoUFxcbI7wiIiIiKga8PHxgY2NDe7evatSfv78eaSmpla72ZRKWFTi4Obmhhs3bpS7T2xsrMbjaLMPEREREZE6f/75JwoLC0sNjt67dy8cHR0REhJipsjMy6ISByIiIiIiUxozZgxatmwJHx8f2Nvb4/r161i3bh18fHwQGhqq3K+oqAgHDhxAaGgo7O3tzRix+TBxICIiIiKDkuc8qjTnbN26Nfbt24fVq1dDEARIpVK89dZbGDlypMq6HL///jsePnxY7dZueBYTByIiIiIyCIlEAns7e8T9fdQs57e3s4dEItGpzocffogPP/xQ437BwcEau9RXdUwciIgsRHJycqnppbUhFovRuHFjI0RERKQbqVSKY/HHIJfLzXJ+iUQCqVRqlnNXB0wciIgsgFwuR1BQEBQKhc51ra2tceHCBZ3vshERGYNUKuXFexXFxIGIyAJIJBIkJCSobXFITExEZGQkoqKi4OXlVWq7WCxm0kBEREbHxIGIyEJo6m7k5eWFVq1amSgaIiIiVVbmDoCIiIiIiCwfEwciIiIiItKIXZWIiExIJpPpPNtIYmKiyr+64AwjRERkKEwciIhMRCaToWvXrigoKNCrfmRkpM517OzsEB8fz+SBiIgqjIkDEZGJyOVyFBQUwN7KGVYi4//8KoQi5BdkQi6XM3EgIqIKY+JARGRi+YpMc4dARESkMyYOREQmVlaLg0IoBiDocUQRrETWao5XxCSFiExOn7FchmKIcV05OTno1asX0tLS8NNPPymnwR46dCjOnj1bav99+/ahadOmFTpnZcHEgYjIRCQSCezs7JBfYLqLeTs7Oy4OR0QmU9GxXBVliHFdy5cvR3Fxsdpt/v7+mDJlikqZm5ub3ueqbJg4EFGlkJycrHZVZU3EYrHGhdVMRSqVIj4+vsw7cf/++y9ycnJ0Pq6TkxMaNGigdhtnVSIiUyoZy+VoXQfWIhuTnrtYKERuQUaFxnUlJSVhy5YtmDJlCj777LNS28ViMdq2bVvBSCsvJg5EZPHkcjmCgoKgUCh0rmttbY0LFy5YzF13qVRa5h80rgpNRFWFtcgGNaxsTXtS3f9ElDJ37lyEhYXBw8Oj4gergpg4EJHFKK9f7Jo1a9TejU9JScHChQsxefJkuLu7l9ru5OQEmUwGmUym9ri8I09ERAAQFxeHmzdvIjo6GlevXlW7z9mzZ9G2bVsUFxejTZs2GDduHNq1a2fiSM2HiQMRWQSZTIZu3bohLy9Pr/oLFy7Uq56DgwOOHj3K5IGIqBrLy8vD/PnzMWHCBNSsWVPtPu3atUO/fv3QpEkT3L9/H+vWrcN7772H2NhY+Pn5mThi82DiQEQWQS6XIy8vD3M+mQQPNS0HxnAnJQUzFyzmOgdERNXcihUrUKdOHQwcOLDMfZ5fhDM4OBh9+/bF8uXLsWbNGmOHaBGYOBCRRfFwd4fvi17mDoOIiKoJmUyG9evXY9myZcjOzgYA5ObmKv/NycmBk5NTqXqOjo7o2rUrDhw4YNJ4zYmJAxFZlDspKVXyXEREZJnu3buHwsJCfPjhh6W2vfvuu2jTpg1++OEHM0RmeZg4EJFFmblgsblDICKiasTX1xebNm1SKbt27Rq++uorzJ49u8wZ73Jzc3Hs2LFqNSMeEwcisijmGONARETVl1gsRkBAgNptLVq0QIsWLXDu3DmsXbsW3bt3h1Qqxf3797Fhwwakp6dj6dKlJo7YfJg4EBEREZFBFQuFBllXQedzGomrqysKCwuxZMkSPHr0CA4ODvDz88Ps2bPRunVro53X0jBxICKLIJFI4ODgYPIWAAcHB4tZHI6IqLKTSCSws7NDbkGGWc5vZ2dnkN/0gIAA3LhxQ/m4cePGWLduXYWPW9kxcSAiiyCVSnH06NEyF4ArS2JiIiIjIxEVFQUvL91nY+ICcEREhiOVShEfH6/zb7mh8DfduJg4EJHFkEqlZf7gJycnIysrS+djisViNG7cuKKhERGRlsr7LafKjYkDEVk8uVyOoKAgKBRld5h9fmGeEtbW1rhw4QK7IxEREVUQEwcisngSiQQJCQl6tzgwaSAiIqq4CicOBQUFEIlEsLW1NUQ8RERqsbsRERGReemcOJw5cwaHDx/GhQsXkJSUhPz8fACAvb09mjZtCj8/P4SGhpY5Hy4RERERaSYIgrlDoGpAl8+ZVolDYWEhtm/fjg0bNkAmk8HZ2RktWrTAa6+9BmdnZwiCgKysLNy7dw979uxBbGwsGjZsiBEjRmDw4MGwsbHR+8kQERERVScl1025ublwcHAwczRU1eXm5gKAVtfrWiUOr776KgoLC9G/f3/06tULLVq0KHf/v/76C3FxcVi5ciXWr1+PI0eOaHMaIiIiomrP2toaLi4uuH//PgDA0dERIpHIzFFRVSMIAnJzc3H//n24uLjA2tpaYx2tEodRo0ZhwIABWo9jaNmyJVq2bInIyEjs3LlTqzpERERE9FT9+vUBQJk8EBmLi4uL8vOmiUhgBzq1rly5AgBo1aqVmSMhIiKiysAY1w7FxcUoLCw02PGInmVjY6NVS0MJo0zHumXLFmzcuBEHDhwwxuGJiIiIqgVra2udLuyIjMkoiUNmZibu3r2rc73k5GSsW7cOf/75J27dugVPT0/88ssv5da5f/8+vvvuO5w4cQJ3795FrVq10K5dO0ycOJGrFhIRERERGYhFLQB369YtxMfHo02bNlAoFFpND3X16lUcPHgQAwcORJs2bfDw4UOsWLECb731Fn755Rcu/EREREREZAAWlTiEhIQgNDQUADB16lT89ddfGuu89NJL2L9/P2rU+L+n4u/vj+DgYOzatQsjRowwWrxE+kpOTtZ7FWQuhEZERETmYFGJg5WVlc51xGJxqbL69etDIpFwJgKySHK5HEFBQVAoFDrXtba2xoULF9iSRkRERCZnUYmDody5cwcZGRlo2rSpuUMhKkUikSAhIUFti0NiYiIiIyMRFRUFLy+vUtvFYjGTBiIiIjILrRMHPz8/rRcfMee0YYIgYO7cuXjhhRfQp0+fCh+rZDU9IkNydXWFq6trqfL8/HwAgJubW5mJLz+TRESWSRAELtRGVZrWiUOPHj0qxZchOjoap0+fxtq1a+Ho6FihYxUWFuLatWsGioyqm/T0dJ3HMdy7dw8AcPz4cdy5c0enumKxWG0yQkREpqPtYrlElZHWicP8+fONGYdB/PDDD1i2bBm+/PJLBAYGVvh4NjY2aruLEGmSmpqKsMFhyC/I16v+kiVLdK5jb2eP/XH70bBhQ73OSUREFZOYmGjuEIiMqsqMcTh48CA+//xzREZG4s033zTIMUUiUYVbLah6ysvLQ35BPno27waJk4vRzyfPeYS4v48iLy+Pn1kiIjOpDD0ziCqiQolDamoqUlJSkJWVpXbNhVdffbUih9famTNnMHHiRLz11lsYPXq0Sc5JRERERFSd6JU4pKamYvr06Thz5gwAqE0aRCKRzuMD8vLyEB8fDwCQyWR4/Pgx4uLiAADt27eHRCLBsGHDkJqaioMHDwIAkpKSMHr0aDRp0gT9+vXDpUuXlMeTSCRo1KiRPk+RyCDi/j5q7hCIiIiIDEKvxGHKlCm4dOkSPvzwQ7Ru3Rq1atUySDAZGRkYN26cSlnJ402bNiEgIAAKhQLFxcXK7X/++Seys7ORnZ2Nt99+W6XuG2+8USnGZlDVZequSkTVDRdTJCIyHb0Shz///BMffPABIiMjDRqMm5sbbty4Ue4+sbGxKo8HDBiAAQMGGDQOIkOROLnghVp1zR0GUZXExRSJiExLr8Shfv36aldsJiIiMhUupkhEZFp6JQ4jRozA5s2bMXjwYDg4OBg6JiIiIq1o6m7k5eWFVq1amSgaIqKqTa/EISwsDMXFxXj11VfRo0cP1K9fH9bW1ir7iEQiDB8+3BAxElVa8pxHVeo8ROYgk8kgl8t1qlMyn74+8+pLJBJIpVKd6xERVXV6JQ43b97EunXrkJ6eju+//17tPkwcqDqTSCSwt7M36YBlezt7dr2gKkcmkyG4a7DeiynqMxbP3s4ex+KPMXkgInqOXonDrFmzkJ2djS+++MKgsyoRVRVSqRTH4o/pdZe0vH7Z5eFdUqqK5HK5WRZTlMvl/D4RET1Hr8Th2rVrGDt2LAYNGmToeIiqDKlUqveFB/tlExERkaXRK3Fwc3MzdBxERERl4jolRETmp1fiMHbsWCxYsAB9+vRBgwYNDB0TUZVX1qJVmgZ0ctEqqq64mCIRkfnplTicO3cOtWrVQs+ePREYGIgGDRqUmlUJAGbMmFHhAImqGm0WrSprQCcXraLqiospEhGZn16Jw7MzKR07dkztPiKRiIkDkRrlLVqlCRetIiIiInPRK3G4fv26oeMgqlbY3YiIiIgqG60Th7i4OHTu3Bk1a9Y0ZjxERESlcDFFIiLz0zpxmDRpEkQiEfz9/REcHIyuXbuiadOmxoyNiIiqOS6mSERkOUSCIAja7JiVlYXjx48jISEBx48fx8OHD9GwYUMEBwcjODgYAQEBsLW1NXa8JnPlyhUA4Fz6RERmJpPJylxM8d9//0VOTk6p8pSUFCxcuBCTJ0+Gu7t7qe1OTk5lzgrIxRRJX7x2oKpO68ThWYIg4PLly4iPj0d8fDz+/vtv2NvbIyAgQNkaUdmnaeWXn4jIssnlcvj5+ZU7Q1lZOEMZGQOvHaiq0ytxeN6DBw+UScTJkyeRk5MDLy8vBAcH44033oCnp6chYjUpfvmJiCxfWWuiaMI1UcgYeO1AVZ1esyo9r27duhg4cCAGDhyIoqIinDt3DvHx8Thy5Ajs7e0xevRoQ5yGiIhIBS/+iYhMxyAtDuUpLCyEjY2NMU9hFLxrQERERLrgtQNVdVq3OOzatavc7XZ2dpBKpWjevDlq1Pi/w1bGpIGIiIiIiFRpnThMnToVIpEI5TVQiEQi1KlTB1OnTkXfvn0NEiAREREREZmf1onDTz/9VO72/Px83L59Gz/++CM++eQT1K5dG506dapwgEREREREZH4GH+Pw5MkTvPnmm5BIJPjuu+8MeWiTYj9FIiJ6HmdxovLw2oGqOoPMqvQsW1tb9O7dG+vWrTP0oYmIiMxGLpcjKCiI60YQUbVl8MQBAFxcXJCfn2+MQxMREZmFRCJBQkKC2haHxMREREZGIioqCl5eXqW2i8ViJg1EVOkZJXH4+++/Ub9+fWMcmoiIyGw0dTfy8vJiNxUiqrKsDH3Aw4cPY+fOnQgNDTX0oYmIiIiIyEy0bnGIiIgod3tBQQH++ecf/Pfff/D29uZq0UREREREVYjWicPNmzfL3W5nZwdPT0+89957GDx4MOzs7CocHBERERERWQatE4cjR44YMw4iIiIiIrJgBh/jQEREREREVY9WLQ7//vsvGjRooNcJKlKXiIjI1GQyGeRyuU51EhMTVf7VhUQigVQq1bkeEZGpaZU4dO/eHa+99hrefvtttG7dWqsDX7hwAdu2bcP+/fuVKykSERFZMplMhq5du6KgoECv+pGRkTrXsbOzQ3x8PJMHIrJ4WiUOW7ZswbfffotBgwahYcOG6NChA1q0aAE3NzeIxWIIgoCsrCzcu3cPf/31F06fPo20tDQEBARg8+bNxn4OREREBiGXy1FQUABH6zqwFtkY/XzFQiFyCzIgl8uZOBCRxdMqcWjdujXWr1+Pa9euYceOHThy5Ah27twJABCJRAAAQRAAAA0aNEBoaCgGDhwIX19fI4VNRERkPNYiG9SwsjX+iRTGPwURkaHotHK0r68vZsyYgRkzZiAtLQ23b9/Go0ePAAAuLi7w9PREvXr1jBEnERERERGZkU6Jw7Pq1avHJIGIiIiIqJqwqOlYk5OTMWvWLPTr1w/NmzdH3759taonCAJWr16N4OBgtG7dGoMHD8alS5eMGywRERERUTViUYnDrVu3EB8fj8aNG6Np06Za11uzZg2ioqIwfPhwrFq1Cq6urhgxYgRSUlKMGC0RERERUfWhd1clYwgJCUFoaCgAYOrUqfjrr7801ikoKMCqVaswYsQIDB8+HADw0ksvoWfPnli3bh0+//xzI0ZMVDkkJycjKytL53pisRiNGzc2QkRERERU2VhU4mBlpXsDyIULF/D48WP06tVLWWZra4vu3bvj4MGDhgyPqFKSy+UICgqCQqH79C3W1ta4cOECJBKJESIjIiKiysSiEgd93L59GwDg6empUt60aVNs3LgR+fn5sLe3N0doRBZBIpEgISFBbYtDYmIiIiMjERUVBS8vr1LbxWIxkwaqloqFQpNMlVosFBr/JEREBlLpE4esrCzY2trCzs5OpbxkYbrMzEy9EwdBEJCbm2uIMInMytXVFa6urqXK8/PzAQBubm5ljivid4Cqk5LvRG5xhsnPy+9a5ScIgnJ9K6KqSKvEISYmRucDi0QijB49Wud6lqSwsBDXrl0zdxhEWklPT9d5HMO9e/cAAMePH8edO3d0qisWi9UmI0SVWcn3wKQrRxdn4M6dO3p11yXLY2trgoUDicxE78Th+RWjny0vybhNkTiIxWI8efIEBQUFKq0OWVlZEIlEcHZ21vvYNjY2artvEFma1NRUDB48GAUFBXrVX7Jkic517OzsEBcXh4YNG+p1TiJLVDIWyNQrR3t4eMDX19f45yOjSkxMNHcIREalVeJw/fp1lcdpaWn48MMP8eKLL2LYsGHw8PAA8HS8wcaNG5GUlIRVq1YZPlo1SsY23LlzB82aNVOW3759Gw0bNqzQ+AaRSARHR8cKx0hkbHl5eSgoKDDtXdKCDOTl5fE7QlWKucbE2dvb87tUBbCbElV1erWLzp49G40bN8aiRYvQqlUr1KxZEzVr1kTr1q2xePFiNGrUCF988YWhY1XL398fNWvWxP79+5VlhYWF+O233xAUFGSSGIiIiIiIqjq9BkefPn0aH3/8cZnbO3TogEWLFul83Ly8PMTHxwMAZDIZHj9+jLi4OABA+/btIZFIMGzYMKSmpiqnWrWzs8OoUaMQHR0NiUQCb29vbN26FY8ePcLIkSP1eHZElZepB3QSERFR9aFX4mBnZ4dLly7hnXfeUbv94sWLpWY50kZGRgbGjRunUlbyeNOmTQgICIBCoUBxcbHKPh988AEEQcD69eshl8vh6+uLdevWwd3dXecYiCojiUQCW1tbPHnyxGTntLW15VStRERE1YheicNrr72G2NhYiMVihIeHo1GjRgCAu3fvIjY2Fr/88guGDh2q83Hd3Nxw48aNcveJjY0tVSYSiTBq1CiMGjVK53MSVQVSqRQJCQmQy+WltmVmZmLIkCF6LQBnZWWFzZs3q51kQCKRQCqV6hUvERERVT56JQ4ff/wxHj58iO+//x6bN29WTiGnUCggCAL69OlTblcmIkuTnJys81SmwNNZvRo3bmyEiHQnlUrLvJAvawE4TSzp+RGZEheAIyIqTa/EwdbWFgsXLsTIkSORkJAAmUwG4OmFS1BQkMrsRkSWTi6XIygoSK878tbW1rhw4YLFd9nhxT+RdiQSCezs7JBbYLrxQnZ2dhb/G0JEBFRw5ehmzZoxSaBKTyKRlHlHPjExEZGRkYiKilK7podYLOYffKIqRCqVIj4+Xm23v/Jo+q0oD7v9EVFlUaHEgaiq0HRH3svLC61atTJRNERkTuV1+9OEvxVEVJXpnTjEx8fju+++w99//43s7OxSK0gDwLVr1yoUHBERERERWQa9FoA7cOAAIiIi8ODBA/Tu3RsKhQJ9+vRB7969YW9vDx8fH4wePdrQsRIRERERkZno1eKwatUqtG7dGlu2bEFmZia2bt2KgQMHIjAwEPfu3cPgwYPh5uZm6FiJiIiIiMhM9GpxSEpKQu/evWFtbY0aNZ7mHkVFRQCersXw9ttvY82aNYaLkoiIiIiIzEqvxMHe3h42NjYAns4qY2tri/T0dOX2unXr4t69e4aJkIiIiIiIzE6vxMHDwwNJSUnKx76+vti9ezeKiopQUFCAX375BQ0aNDBYkEREREREZF56jXHo3r07YmNjMWXKFNja2iIiIgL/+9//0K5dOwBAXl4e5s2bZ9BAiSpKJpPpNTf7s//qgnOzExERUVWiV+IwcuRIjBw5Uvm4W7duiI2NxW+//QZra2t07doVHTp0MFiQRBUlk8kQHByM/Px8vepHRkbqXMfe3h7Hjh1j8kBERERVgsEWgHv55Zfx8ssvG+pwRAYll8v1Thr0lZ+fD7lczsSBiIiIqgSuHE3VypxPJsHD3d3o57mTkoKZCxYb/TxEZFrJycnIysoqVa6pW6NYLNa4Qj0RkaXTKnEICQmBSCTS6cAikQiHDh3SKygiY/Fwd4fvi17mDoOIKiG5XI6goCAoFIoy9ymrW6O1tTUuXLgAiURirPCIiIxOq8Shffv2pRKHv/76C7du3YKXlxc8PDwAAHfu3EFiYiJefPFFtGzZ0vDREhERmYlEIkFCQoLaFgdNxGIxkwYiqvS0Shzmz5+v8vjQoUM4dOgQNmzYgMDAQJVtJ06cwPjx4zFu3DjDRUlERGQB2N2IiKozvdZxWLp0KcLDw0slDQDQqVMnDBkyBEuXLq1wcEREREREZBn0ShySk5Ph4uJS5nYXFxfcvXtX35iIiIiIiMjC6JU4NGrUCDt37kROTk6pbY8fP8aOHTvgboKZa4iIiIiIyDT0mo51/PjxiIyMRK9evfDGG28o+3wmJyfj559/RkZGBrsqERERERFVIXolDqGhoVi9ejUWLVqEVatWqWzz9fXFl19+iS5duhgkQCIiIiIiMj+9F4Dr3LkzOnfujPT0dKSmpgIAGjZsCFdXV4MFR0RElUtZC6RpwgXSiIgsX4VXjnZ1dWWyQEREWi2QVhYukEZEZPm0Shx27doFAOjXrx9EIpHysSb9+/fXMywiIrJUMpkMcrlc7bY1a9aonTgjJSUFCxcuxOTJk9VOnuHk5ASZTAaZTFZqm0QigVQqrXjgRERUIVolDlOnToVIJELv3r1ha2uLqVOnaqwjEomYOBARVTEymQzBwcHIz8/Xq/7ChQt1rmNvb49jx44xeSAiMjOtEofDhw8DAGxtbVUeExFR9SKXy/VOGvSVn58PuVzOxIGIyMy0Shye/7HmjzcRUfX20bvhaFi/ntHPk/pfGlZs+t7o5yEiIs30Ghy9YMEC9O3bF82bNzd0PEREZMEkEgkcHBxMejHv4ODAQdNERBZAr8Th+++/x4YNG+Du7o7evXujV69e8PHxMXRsRERkYaRSKY4ePVrm4OiyJCYmIjIyElFRUfDy8tKpLgdHExFZBr0Sh5MnT+LQoUPYt28f1q5di1WrVsHT01OZRHh6eho6TiIishBSqbTMC3mu40BEVHXplTjUrFkT/fv3R//+/ZGVlYUDBw4gLi4OK1asQExMDLy9vdGnTx98+OGHho6XqELupKRUqfMQWRJt1nGIjIxUW851HIiILJ9IEATBUAd7+PAhdu/ejejoaOTm5uLatWuGOrTJXblyBQDQqlUrM0dChiCTydCtWzfk5eWZ7JwODg44evQou1hQtcIWB6rOeO1AVV2FV44GgMLCQiQkJGDfvn04evQocnNz0aBBA0Mcmsgg2C+byDR48U9EVHXpnTgUFRXhxIkT2LdvHw4fPozHjx/D1dUVAwYMQO/eveHv72/IOIkqrLx+2Zp4eXnxDhIRERFVa3olDtOnT8fhw4eRmZmJ2rVro0+fPujTpw/atWsHkUhk6BiJiIiIiMjM9EocDh8+jNDQUPTu3RsdOnSAtbW1oeMiIiIiIiILolficOLECdSoYZDhEaUkJSVh7ty5uHjxIpycnNCvXz+MHz8etra25dZ7+PAhlixZgoSEBDx69Ahubm4YMmQI3n77baPESURERERUneh19W+spCEzMxPDhg1DkyZNEB0djbS0NMyfPx/5+fmYNWtWuXXHjRuH27dvY+LEiWjQoAESEhLw+eefw9raGoMGDTJKvFR1lDUTTGJiosq/z+NMMERERFRdaJUBhISEwMrKCvv374eNjQ1CQkI0jmUQiUQ4dOiQTsFs27YNOTk5iImJgYuLCwCguLgYs2fPxqhRo1CvXj219dLT03HmzBl89dVXGDBgAAAgMDAQV65cwa+//srEgcrFueeJiIiINNMqcWjfvj1EIhGsrKxUHhtaQkICAgMDlUkDAPTq1QufffYZTpw4oUwKnldUVAQAqFWrlkp5zZo1kZuba/A4qWqRSCRISEjQe+55Jg1ERERUHWiVOMyfP7/cx4Zy+/ZtDBw4UKVMLBbD1dUVt2/fLrNegwYN0LlzZ6xcuRIeHh6oX78+EhIScOLECSxatMgosVLVwu5GREREROXTa7DCrl278PLLL8PNzU3tdplMhj/++AP9+/fX6bhZWVkQi8Wlyp2dnZGZmVlu3ejoaEyYMAF9+vQB8LQLyYwZM9CjRw+dYniWIAhssSAiIiKtCILAaempStMrcZg2bRoWLFhQZuLw559/Ytq0aTonDvoSBAHTpk3DP//8g8WLF8PV1RUnT57EvHnz4OzsrEwmdFVYWIhr164ZOFoiIiKqqjTNAklUmemVOAiCUO723NxcvdZ2EIvFyM7OLlWemZkJZ2fnMusdO3YMcXFx2LNnD3x8fAAAAQEByMjIwPz58/VOHGxsbODl5aVXXSIiIqpeypqBj6iq0DpxuH79Oq5fv658fO7cORQXF5faLysrC9u2bYOHh4fOwXh6epYay5CdnY309HR4enqWWS8xMRHW1tbw9vZWKff19cWPP/6IvLw8ODg46ByPSCSCo6OjzvWIiIio+mE3JarqtE4cDh06hJiYGABPvxjbt2/H9u3b1e4rFovx9ddf6xxMUFAQVq5cqTLWIS4uDlZWVujUqVOZ9aRSKYqLi3Hjxg00a9ZMWX716lXUqVNHr6SBiIiIiIj+j9aJw6BBgxAcHAxBEPDWW28hMjISQUFBKvuIRCI4ODigUaNGei0SFxYWhtjYWIwePRqjRo1CWloaFixYgLCwMJU1HIYNG4bU1FQcPHgQwNOEo2HDhoiMjMTo0aPxwgsv4Pfff8fPP/+MsWPH6hwHERERERGpEgmaBiyocfbsWXh5eRll/vqkpCTMmTMHFy9ehJOTE/r164cJEyaoDDYaOnQoZDIZjhw5oixLTk7GkiVLcP78eWRnZ8PNzQ1vvfUWwsPD9RpvceXKFQBAq1atKv6kiIiIqMrjtQNVdXolDo8ePcJ///2n0i3oWTdu3ED9+vXLHdBs6fjlJyIiIl3w2oGqOit9Kn311VeYNWtWmds/++wzvcY4EBERERGRZdIrcTh9+jRCQkLK3N6tWzecOnVK76CIiIiIiMiy6JU4yOVy1K5du8ztLi4uyMjI0DsoIiIiIiKyLHolDq6urvj777/L3H716lWjDJwmIiIiIiLz0CtxCA0NxY4dO3D48OFS2w4dOoSdO3ciNDS0wsEREREREZFl0H2xBQBjx47FqVOnMGbMGDRr1gwvvvgiAODWrVu4fv06mjZtisjISIMGSkRERERE5qNXi0OtWrWwfft2fPTRRygqKsKBAwdw4MABFBUV4X//+x9++OEH5crPRERERERU+em1joM2MjMzuY4DERERVRu8dqCqTq8Wh7I8efIE+/fvx//+9z907tzZkIcmIiIiIiIz0muMw7MEQcCpU6ewd+9eHDx4EI8fP4ZEIkHfvn0NER8REREREVkAvROHv/76C3v37sWvv/6KBw8eQCQSoXfv3ggPD0fbtm0hEokMGScREREREZmRTolDSkoK9uzZg7179yI5ORn16tXDa6+9htatW2PChAno0aMH/Pz8jBUrERERERGZidaJw+DBg3H58mXUrl0bPXr0wNy5c/Hyyy8DAO7evWu0AImIiIiIyPy0Thz+/PNPuLm5YerUqQgODkaNGhUeHkFERERERJWE1rMqzZw5E66urhgzZgw6deqEWbNm4fTp0zDSbK5ERERERGRBtG42GDJkCIYMGYKUlBTs3bsXv/zyC3744QfUrVsXAQEBEIlEHBBNRERERFRFVWgBuJKZlfbt24f09HTUrVsX3bp1Q0hICDp27Ag7OztDxmpSXMSFiIiIdMFrB6rqDLJytEKhwOnTp7Fnzx4cPHgQOTk5cHBwwMWLFw0Ro1nwy09ERES64LUDVXUGGeFsZWWFjh07omPHjpg9ezYOHz6MvXv3GuLQRERERERkAQw+NZKdnR169+6N3r17G/rQRERERERkJlrPqkRERERERNUXEwciIiIiItKIiQMREREREWnExIGIiIiIiDRi4kBERERERBoxcSAiIiIiIo2YOBARERERkUZMHIiIiIiISCMmDkREREREpBETByIiIiIi0oiJAxERERERacTEgYiIiIiINGLiQEREREREGjFxICIiIiIijZg4EBERERGRRkwciIiIiIhII4tLHJKSkvDee++hbdu26NSpExYsWIAnT55oVTctLQ1TpkxBhw4d0Lp1a/Tq1Qt79uwxcsRERERERFVfDXMH8KzMzEwMGzYMTZo0QXR0NNLS0jB//nzk5+dj1qxZ5da9f/8+Bg8eDA8PD8yZMwc1a9bErVu3tE46iIiIiIiobBaVOGzbtg05OTmIiYmBi4sLAKC4uBizZ8/GqFGjUK9evTLrLly4EPXr18fatWthbW0NAAgMDDRF2EREREREVZ5FdVVKSEhAYGCgMmkAgF69ekGhUODEiRNl1nv8+DH279+Pd955R5k0EBERERGR4VhU4nD79m14enqqlInFYri6uuL27dtl1rt69SoKCwtRo0YNhIeHo0WLFujUqRMWLlyIwsJCY4dNRERERFTlWVRXpaysLIjF4lLlzs7OyMzMLLPegwcPAAAzZszAoEGDMGbMGFy+fBlRUVGwsrLCpEmT9IpHEATk5ubqVZeIiIiqF0EQIBKJzB0GkdFYVOKgL4VCAQDo2LEjpk6dCgDo0KEDcnJysH79eowePRr29vY6H7ewsBDXrl0zaKxERERUddna2po7BCKjsajEQSwWIzs7u1R5ZmYmnJ2dy60HPE0WnhUYGIiVK1ciOTkZPj4+OsdjY2MDLy8vnesRERFR9ZOYmGjuEIiMyqISB09Pz1JjGbKzs5Genl5q7MOzNF3cFxQU6BWPSCSCo6OjXnWJiIioemE3JarqLGpwdFBQEE6ePImsrCxlWVxcHKysrNCpU6cy60mlUnh7e+PkyZMq5SdP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DqFnz56wsbEpd19+l0wrKSlJJQEHgPr166N27dq4e/dumfX4PpmOlZUVpk+fjtOnT2P37t04efIkBg0aBLlcjjZt2pRZj795RJaPiUMVtW/fPlhbW6N58+Zqt/v7+6NmzZrYv3+/sqywsBC//fYbgoKCTBVmtdGtWzc8evRIpQXo4cOHuHr1Klq0aKG2jru7O5o0aYK4uDiV8n379iEwMLDU4EMynCNHjiA3N7fc2ZRK8LtkWg0bNsTff/+tUiaTyfDw4UNIpdIy6/F9Mr1atWqhWbNmEIvFiI2NhZubGzp27Fjm/vzNI7J8HONQBYwcORIBAQHw8fEB8HRV1R9++AHvvvsuXF1dAQDDhg1DamoqDh48CACws7PDqFGjEB0dDYlEAm9vb2zduhWPHj3CyJEjzfZcqqrQ0FC0atUKkZGRmDBhAuzs7LB69WrY2trinXfeAQBMnz4du3btUrkoGjt2LD7++GM0atQIAQEB2LdvHy5fvozvv//eXE+lWti7dy8aNmyIl156qdQ2fpfMKywsDPPmzcPcuXMREhKCR48eYcWKFahTp47KNJ58n8zn8uXLOHv2LHx9fZGfn48jR45g9+7dWLNmjco4B/7mEVU+TByqAA8PD+zYsQP//fcfFAoFmjRpgunTp2Po0KHKfRQKRanpWT/44AMIgoD169dDLpfD19cX69atY3OwEVhZWWH16tX46quvMGvWLBQWFuLll1/G5s2blcmduveob9++yMvLw5o1a7B69Wp4eHggJiYGfn5+5nga1UJmZiaOHz+OYcOGqawVUILfJfN69913YWtri61bt2LHjh1wcnJC27Zt8e2336J27drK/fg+mY+NjQ1+++03LFu2DMDTiSBiY2NL/W7xN4+o8hEJ5a2YQ0REREREBI5xICIiIiIiLTBxICIiIiIijZg4EBERERGRRkwciIiIiIhIIyYORERERESkERMHIiIiIiLSiIkDERERERFpxMSBiIiIiIg0YuJAREREREQaMXEgItJDSEgIRo0apXbbmTNn4OPjg7i4OBNHRUREZDxMHIiIiIiISCMmDkREREREpBETByKiZ0RHR8PHxwdJSUkYN24c/P39ERAQgLlz56KgoMDc4REREZlNDXMHQERkicaPHw+pVIpJkybh0qVLiI2NRVZWFhYsWKDcp6ioCHK5vFTd7OxsU4ZKRERkEkwciIjUcHNzw4oVKwAAQ4YMQc2aNbFlyxaMGDECzZo1AwD8/vvvCAwMNGeYREREJsPEgYhIjSFDhqg8Dg8Px5YtW5CQkKBMHNq0aYPx48eXqnv9+nV8/fXXpgiTiIjIZJg4EBGp0bhxY5XHjRo1gpWVFe7du6csq127Njp27FiqrrW1tdHjIyIiMjUOjiYi0oJIJDJ3CERERGbFxIGISI3k5ORSjxUKBdzc3MwUERERkXkxcSAiUmPz5s0qj7///nsAQFBQkDnCISIiMjuOcSAiUuPevXuIiIhAly5dcOnSJezZswd9+/ZVDowmIiKqbtjiQESkxrfffgtbW1ssXrwY8fHxCA8Px7x588wdFhERkdmwxYGISI3atWsjKiqqzO1Hjhwpc1tAQABu3LhhjLCIiIjMhi0ORERERESkERMHIiIiIiLSiIkDERERERFpJBIEQTB3EEREREREZNnY4kBERERERBoxcSAiIiIiIo2YOBARERERkUZMHIiIiIiISCMmDkREREREpBETByIiIiIi0oiJAxERERERacTEgYiIiIiINGLiQEREREREGv0/BwOh0sgYC2oAAAAASUVORK5CYII=
+"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -18631,7 +19549,7 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO 8: exporta sin sobrescribir los datos crudos.</span>
@@ -18671,7 +19589,7 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos_limpios</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span>
@@ -18703,7 +19621,7 @@ exploratoria de actividad por pH, separada por temperatura.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bitacora_calidad</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span>
