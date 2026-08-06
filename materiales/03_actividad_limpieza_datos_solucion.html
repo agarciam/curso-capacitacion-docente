@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>03_actividad_limpieza_datos_solucion</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<title>03_actividad_limpieza_datos_solucion</title><script src="../assets/vendor/requirejs/require.js"></script>
 
 
 
@@ -13993,11 +13993,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 window.MathJax = {
   tex: {
     inlineMath: [["$", "$"], ["\\(", "\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
     processEscapes: true
-  }
+  },
+  svg: { fontCache: "global" }
 };
 </script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+<script defer src="../assets/vendor/mathjax3/tex-svg-full.js"></script>
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 

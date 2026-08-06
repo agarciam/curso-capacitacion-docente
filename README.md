@@ -47,11 +47,19 @@ curso-capacitacion-docente-github-pages/
 │   ├── favicon.svg
 │   └── vendor/
 │       ├── requirejs/
-│       └── mathjax/
+│       ├── mathjax/
+│       └── mathjax3/          # MathJax 3.2.2 local para las ecuaciones
 └── materiales/
     ├── 01_demostracion_python_colab_datos.html
     ├── 02_actividad_limpieza_datos.html
     ├── 03_actividad_limpieza_datos_solucion.html
     ├── 04_demostracion_estadistica_descriptiva_visualizacion.html
     └── 05_caso_estudio_modelo_mixto_semillas_documentado.html
+```
 
+## Ecuaciones en los cuadernillos HTML
+
+Los cinco cuadernillos están configurados para cargar MathJax 3.2.2 desde
+`assets/vendor/mathjax3/tex-svg-full.js`. De esta forma, las ecuaciones LaTeX
+se renderizan en GitHub Pages sin depender de rutas `file:///...` del equipo
+utilizado para exportar los notebooks ni de una CDN externa para MathJax.
