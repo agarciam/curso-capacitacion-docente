@@ -3,7 +3,6 @@
 **Departamento de Desarrollo Académico**
 **Coordinación de Actualización y Formación Docente**
 
-## Registro del curso
 
 | Información          | Detalle                                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------------- |
@@ -17,14 +16,12 @@
 
 Desarrollar habilidades estadísticas y computacionales mediante el uso de Python para organizar, analizar, visualizar e interpretar datos experimentales de investigación en bioquímica, aplicando estadística descriptiva, inferencial y modelos de regresión lineal para la validación de resultados científicos de laboratorio.
 
-## Sitio del curso
-
-https://agarciam.github.io/curso-capacitacion-docente/
 
 ## Contacto
 
 **Andrés García Medina**
 Correo: [andgarm.n@gmail.com](mailto:andgarm.n@gmail.com)
+
 Sitio personal: https://sites.google.com/view/andresgm/home
 
 Esta versión publica cinco documentos HTML:
