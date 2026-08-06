@@ -2,6 +2,7 @@
 
 **Departamento de Desarrollo Académico**
 **Coordinación de Actualización y Formación Docente**
+**Instituto Tecnológico de Tijuana**
 
 
 | Información          | Detalle                                                                                           |
